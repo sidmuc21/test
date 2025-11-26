@@ -14,8 +14,6 @@ test('E2E-Test von Addition', async ({page}) => {
     await expect(page.locator('#result')).toContainText('Result: 12');
 
     await expect(page.getByRole('heading', {level: 1})).toHaveText('Calculator');
-    await expect(page.getByRole('heading', {level: 1})).toContainText('Calculator');
-
     await page.waitForTimeout(2000);
 
 });
